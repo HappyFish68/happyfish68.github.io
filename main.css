@@ -7,9 +7,9 @@ button {
 }
 body {
     background-color: #102342;
-  margin: 0;                 /* removes default spacing */
-  height: 100vh;             /* full screen height */
-  display: flex;             /* enables flexbox */
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
+    margin: 0;                 /* removes default spacing */
+    height: 100vh;             /* full screen height */
+    display: flex;             /* enables flexbox */
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
 }
