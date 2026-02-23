@@ -10,6 +10,19 @@ section {
   outline: none;
 }
 
+body {
+    counter-reset: demonlist; /* initialize counter */
+}
+
+
+section h2::before {
+    counter-increment: demonlist;            /* increment counter for each section */
+    content: counter(demonlist) " - ";       /* display the number automatically */
+    font-weight: bold;
+    font-size: 50px;                         /* same size as your h2 */
+    display: inline;                         /* inline with heading */
+}
+
 p, h2 {
   margin: 0;
   font-weight: bold;
