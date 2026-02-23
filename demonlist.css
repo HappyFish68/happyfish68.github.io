@@ -11,7 +11,7 @@ section {
 }
 
 .section-img {
-    width: 150px;                  /* adjust as needed */
+    width: 500px;                  /* adjust as needed */
     height: auto;                  /* maintain aspect ratio */
     object-fit: cover;             /* crop if necessary */
     border-radius: 10px;           /* optional rounded corners */
