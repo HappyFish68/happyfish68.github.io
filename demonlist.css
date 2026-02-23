@@ -10,3 +10,13 @@ section {
   border: 15px solid #000000;
   outline: none;   
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 250%;
+}
+
+p {
+  font-weight: bold;
+  font-size: 250%;
+}
