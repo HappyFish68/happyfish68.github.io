@@ -1,9 +1,10 @@
 h1 {
+    vertical-align: top;
     text-align: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
-    font-size:500%;
-    font-color: #ffffff;
+    font-size:2000%;
+    color: #ffffff;
 }
 
 
