@@ -7,4 +7,6 @@ section {
   padding: 20px;
   justify-content: right;
   height: 250px;
+  border: 15px solid #000000;
+  outline: none;   
 }
