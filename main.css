@@ -8,7 +8,6 @@ button {
     outline: none;               /* removes default focus outline */
 }
 
-}
 body {
     background-color: #102342 !important;
     margin: 0;                 /* removes default spacing */
