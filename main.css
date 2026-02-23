@@ -3,7 +3,7 @@ button {
     background-color: #1f3c6b;   /* your existing background */
     width: 250px;
     height: 250px;
-    border: 25px solid #00aaff;   /* thicker outline, change color as needed */
+    border: 20px solid #00aaff;   /* thicker outline, change color as needed */
     border-radius: 20px;         /* rounded corners, adjust px for roundness */
     outline: none;               /* removes default focus outline */
 }
