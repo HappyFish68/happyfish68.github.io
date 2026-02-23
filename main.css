@@ -1,10 +1,14 @@
 h1 {
-    vertical-align: top;
+    position: absolute;           /* removes it from normal flow */
+    top: 20px;                    /* distance from top of viewport */
+    left: 50%;                    /* center horizontally */
+    transform: translateX(-50%);  /* perfect horizontal centering */
     text-align: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
-    font-size:2000%;
+    font-size: 2000%;
     color: #ffffff;
+    margin: 0;                    /* remove default margins */
 }
 
 
