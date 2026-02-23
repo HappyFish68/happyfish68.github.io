@@ -1,13 +1,27 @@
 section {
-  background-color: #888888;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
-  margin: 0;
-  height: 250px;
-  border: 15px solid #000000;
-  outline: none;
+    display: flex;                  /* row layout */
+    flex-direction: row;            /* horizontal alignment */
+    align-items: center;            /* vertically center image + text */
+    justify-content: flex-start;    /* left-align overall */
+    gap: 20px;                      /* space between image and text */
+    background-color: #888888;
+    border: 15px solid #000000;
+    padding: 10px;
+    height: 250px;
+}
+
+.section-img {
+    width: 150px;                  /* adjust as needed */
+    height: auto;                  /* maintain aspect ratio */
+    object-fit: cover;             /* crop if necessary */
+    border-radius: 10px;           /* optional rounded corners */
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;        /* stack text vertically */
+    align-items: flex-start;       /* keep text left-aligned inside the column */
+    gap: 5px;                      /* spacing between h2 and p */
 }
 
 body {
