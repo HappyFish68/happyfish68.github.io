@@ -4,37 +4,52 @@
 </head>
 
 <body>
-<a href="index.html"> <!-- home -->
-<button>Home</button>
-</a>
-<marquee>
-Messy Cheek Games! isnt that just food for though? games about messy cheecks! or cheeks sorry idk why I keep thinking its spelled with a ck and not just a k. Im actually thinking about getting checked for dyslexia! the only problem is my doctor is a bit of a stick in the mud and usually just says its nothing whenever I ask him for anything. Its really annoying. like, I brough him cookies on fathers day and he just grunted that they were a waist of calories! OOF there I go again mispelling words hehe
-</marquee>
+  <a href="index.html">
+    <button>Home</button>
+  </a>
+
+  <marquee>
+    Messy Cheek Games! isnt that just food for though? games about messy cheecks! or cheeks sorry idk why I keep thinking its spelled with a ck and not just a k. Im actually thinking about getting checked for dyslexia! the only problem is my doctor is a bit of a stick in the mud and usually just says its nothing whenever I ask him for anything. Its really annoying. like, I brough him cookies on fathers day and he just grunted that they were a waist of calories! OOF there I go again mispelling words hehe
+  </marquee>
 
 
-<!-- Game 1 -->
-<div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 800px; margin: 0 auto;">
-  <!-- Play button -->
-  <button id="play1" style="margin-bottom: 10px; padding: 15px 30px; font-size: 20px; background-image: button.png"></button>
+  
+  <!-- Game 1 -->
+  <div style="position: relative; width: 100%; max-width: 800px; margin: 20px auto;">
+    <!-- Iframe -->
+    <iframe id="game1" 
+            style="width: 100%; aspect-ratio: 2 / 1; border:8px solid #00aaff;" 
+            title="Tooby Looby">
+    </iframe>
 
-  <!-- Iframe -->
-  <iframe id="game1" 
-          style="width: 100%; aspect-ratio: 2 / 1; border:8px solid #00aaff;" 
-          title="Tooby Looby">
-  </iframe>
-</div>
+    <!-- Play button overlay -->
+    <button id="play1" 
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 20px 40px;
+              font-size: 24px;
+              cursor: pointer;
+              z-index: 10;
+              background-color: #1f3c6b;
+              color: white;
+              border: 4px solid #00aaff;
+              border-radius: 12px;
+            ">
+      Play Game
+    </button>
+  </div>
 
-<script>
-document.getElementById('play1').addEventListener('click', () => {
-    const iframe = document.getElementById('game1');
-    iframe.src = "https://littlewargame.com/play/"; // load game on click
-    document.getElementById('play1').style.display = 'none'; // hide button after click
-});
-</script>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <script>
+    document.getElementById('play1').addEventListener('click', () => {
+        const iframe = document.getElementById('game1');
+        iframe.src = "https://littlewargame.com/play/"; // load game on click
+        document.getElementById('play1').style.display = 'none'; // hide button after click
+    });
+  </script>
+
   
 </body>
-
-
-  
 </html>
