@@ -1,4 +1,9 @@
+html {
+    background-color: #102342;
+}
+
 button {
+    background-color: #1f3c6b;
     background-size: 250px 250px;
     width: 250px;
     height: 250px;
