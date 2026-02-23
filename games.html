@@ -13,30 +13,32 @@
   </marquee>
 
   <!-- Game 1 -->
-  <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 800px; margin: 20px auto;">
-    <!-- Text above the button -->
-    <p style="text-align: center; font-size: 18px; margin-bottom: 10px;">
-      Little War Game
-    </p>
-    <!-- Play button -->
-    <button id="play1" 
+  <div style="position: relative; width: 100%; max-width: 800px; margin: 20px auto; padding-top: 50%;">
+    <!-- Iframe -->
+    <iframe id="game1"
+            style="position: absolute; top:0; left:0; width:100%; height:100%; border:8px solid #00aaff;"
+            title="Tooby Looby">
+    </iframe>
+
+    <!-- Play button overlay -->
+    <button id="play1"
             style="
-              width: 350px;
-              height: 350px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 200px;
+              height: 80px;
               background-image: url('button.png');
               background-size: cover;
               background-position: center;
               border: none;
               cursor: pointer;
-              margin-bottom: 10px;
+              z-index: 10;
             ">
     </button>
-    <!-- Iframe -->
-    <iframe id="game1" 
-            style="width: 100%; aspect-ratio: 2 / 1; border:8px solid #00aaff;" 
-            title="Tooby Looby">
-    </iframe>
   </div>
+
   <script>
     document.getElementById('play1').addEventListener('click', () => {
         const iframe = document.getElementById('game1');
