@@ -4,39 +4,9 @@
     <button style="height: 75px">Home</button>
 </a>
 
-<button id="yorg">Yorg.io</button>
-<script>
-document.getElementById("yorg").addEventListener("click", function () {
-    const newWin = window.open("about:blank", "_blank");
-
-    if (newWin) {
-        newWin.document.write(`
-            <html>
-            <head>
-                <title>Yorg.io</title>
-                <style>
-                    html, body {
-                        margin: 0;
-                        padding: 0;
-                        height: 100%;
-                        overflow: hidden;
-                    }
-                    iframe {
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                    }
-                </style>
-            </head>
-            <body>
-                <iframe src="https://yorg.io"></iframe>
-            </body>
-            </html>
-        `);
-        newWin.document.close();
-    }
-});
-</script>
+<button 
+        onclick='fetch(https://yorg.io/index.html).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+>Infinite Mario</button>
 
 
 
