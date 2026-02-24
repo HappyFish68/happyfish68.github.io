@@ -5,4 +5,13 @@ button {
   left: 50%;                    
   transform: translateX(-50%);
   position: relative;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  background-color: #adfcff;
+  
+}
+
+button:focus {
+  background-color: #ffffff;
 }
