@@ -1,72 +1,17 @@
 <link rel="stylesheet" href="game.css">
 
-<button id="yorg">Open Yorg.io</button>
-
-<script>
-document.getElementById("yorg").addEventListener("click", function () {
-    const newWin = window.open("about:blank", "_blank");
-
-    if (newWin) {
-        newWin.document.write(`
-            <html>
-            <head>
-                <title>Yorg.io</title>
-                <style>
-                    html, body {
-                        margin: 0;
-                        padding: 0;
-                        height: 100%;
-                        overflow: hidden;
-                    }
-                    iframe {
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                    }
-                </style>
-            </head>
-            <body>
-                <iframe src="https://yorg.io"></iframe>
-            </body>
-            </html>
-        `);
-        newWin.document.close();
-    }
-});
-</script>
+<button onclick="
+  const win = window.open('about:blank', '_blank');
+  win.location.href = 'https://yorg.io';
+">
+  Yorg.io
+</button>
 
 
-<button id="yorg3">Play Yorg3.io</button>
+<button onclick="
+  const win = window.open('about:blank', '_blank');
+  win.location.href = 'https://yorg3.io';
+">
+  Yorg3.io
+</button>
 
-<script>
-document.getElementById("yorg3").addEventListener("click", function () {
-    const newWin = window.open("about:blank", "_blank");
-
-    if (newWin) {
-        newWin.document.write(`
-            <html>
-            <head>
-                <title>Yorg3.io</title>
-                <style>
-                    html, body {
-                        margin: 0;
-                        padding: 0;
-                        height: 100%;
-                        overflow: hidden;
-                    }
-                    iframe {
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                    }
-                </style>
-            </head>
-            <body>
-                <iframe src="https://yorg3.io"></iframe>
-            </body>
-            </html>
-        `);
-        newWin.document.close();
-    }
-});
-</script>
