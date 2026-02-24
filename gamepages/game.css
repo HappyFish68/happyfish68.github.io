@@ -2,4 +2,6 @@ button {
   display: flex;
   width: 200;
   height: 150;
+  left: 50%;                    
+  transform: translateX(-50%);
 }
