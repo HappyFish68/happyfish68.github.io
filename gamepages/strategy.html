@@ -4,7 +4,7 @@
     <button style="height: 75px">Home</button>
 </a>
 
-<button id="littlewargame">LittleWarGame.html</button>
+<button id="littlewargame">LittleWarGame</button>
 <script>
 document.getElementById("littlewargame").addEventListener("click", function () {
     const newWin = window.open("about:blank", "_blank");
@@ -39,3 +39,37 @@ document.getElementById("littlewargame").addEventListener("click", function () {
 </script>
 
 
+
+<button id="striketactics">Strike Tactics</button>
+<script>
+document.getElementById("striketactics").addEventListener("click", function () {
+    const newWin = window.open("about:blank", "_blank");
+
+    if (newWin) {
+        newWin.document.write(`
+            <html>
+            <head>
+                <title>Yorg.io</title>
+                <style>
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+                </style>
+            </head>
+            <body>
+                <iframe src="https://striketactics.net/play"></iframe>
+            </body>
+            </html>
+        `);
+        newWin.document.close();
+    }
+});
+</script>
