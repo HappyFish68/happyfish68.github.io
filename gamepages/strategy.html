@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="game.css">
 
+<button 
+        onclick='fetch(https://yorg.io/index.html).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+>Infinite Mario</button>
+
 <a href="../games.html">
     <button style="height: 75px">Home</button>
 </a>
