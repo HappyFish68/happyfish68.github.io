@@ -13,9 +13,9 @@
 </h1>
   
 <body>
-  <a href="demonlist.html"> <!-- demonlist -->
-  <button>Demonlist</button>
-  </a>
+  <button 
+  onclick='fetch(https://cdn.jsdelivr.net/gh/happyfish68/github/io/demonlist).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  >DemonList</button>
 
   <a href="games.html"> <!-- demonlist -->
   <button>Games</button>
