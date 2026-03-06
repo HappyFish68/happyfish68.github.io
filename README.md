@@ -2,4 +2,4 @@
 
 Small static site hosted with GitHub Pages.
 
-Live URL: https://happyfish68.github.io
+GitHub Pages URL: [https://happyfish68.github.io](https://happyfish68.github.io)
