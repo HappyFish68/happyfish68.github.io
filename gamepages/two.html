@@ -5,9 +5,9 @@
 
 <button
 style="height: 75px"
-  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/games.html").then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/games.html", { cache: "no-store" }).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
   >Home</button>
 
 <button 
-  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/things/cellmystic.html").then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/things/cellmystic.html", { cache: "no-store" }).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
   >Cell Machine Sandbox</button>
