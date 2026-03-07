@@ -11,15 +11,15 @@
   </marquee>
 
   <button 
-  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/index.html").then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/index.html", { cache: "no-store" }).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
   >Home</button>
 
   <button 
-  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/one.html").then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/one.html", { cache: "no-store" }).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
   >Tier 1</button>
 
   <button 
-  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/two.html").then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
+  onclick='fetch("https://cdn.jsdelivr.net/gh/happyfish68/happyfish68.github.io@main/gamepages/two.html", { cache: "no-store" }).then(response => response.text()).then(text => {const newWin = window.open("about:blank", "_blank");if (newWin) {newWin.document.open();newWin.document.write(text);newWin.document.close();}});' 
   >Tier 2</button>
 
 </body>
